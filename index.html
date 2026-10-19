@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-(function() {
-  var params = new URLSearchParams(window.location.search);
-  var ttclid = params.get('ttclid');
-  var s2     = params.get('s2');
-
-  // If either TikTok click parameter is present → send to black hat
-  if (ttclid || s2) {
-    // Build the redirect URL preserving all params
-    var dest = 'reco_blackhat.html?' + params.toString();
-    window.location.replace(dest);
-  }
-  // Otherwise: stay on this page (white hat)
-})();
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="color-scheme" content="dark">
